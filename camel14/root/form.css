@@ -1,0 +1,14 @@
+body {
+	background-image: url("slide1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100vh;
+}
+
+.jumbotron {
+	background:rgba(211,211,211, 0.93) !important;
+}
+
+.glyphicon {
+	color: red;
+	font-size: 10px;
+}

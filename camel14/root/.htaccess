@@ -1,0 +1,7 @@
+
+
+AddHandler x-httpd-php53 .php
+
+
+### SH suPHP config for 53 ###
+suPHP_ConfigPath /home/quantumbgorg/php_ini_dir/php53
