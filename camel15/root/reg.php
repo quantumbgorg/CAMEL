@@ -43,7 +43,7 @@ die("<p align='center'><font face='Arial' size='3' color='#FF0000'>Please enter 
 $pfw_header = "From: $sur_name\n"
   . "Reply-To: $sur_name\n";
 $pfw_subject = "CAMEL registration";
-$pfw_email_to = "camel14@quantum-bg.org";
+$pfw_email_to = "camel15@quantum-bg.org";
 $pfw_message = "Visitor's IP: $pfw_ip\n"
 . "Title: $Title\n"
 . "first_name: $first_name\n"
@@ -111,7 +111,7 @@ $pfw2_message = "Thank you for your abstract submission for CAMEL workshop. The 
 . "abstract: $abstract\n"
 . "comments: $comments\n"
 . "Please do not reply to this email, it is automatic respond. "
-. "If you want to contact us for further information, please write us at the following address camel14@quantum-bg.org ";
+. "If you want to contact us for further information, please write us at the following address camel15@quantum-bg.org ";
 @mail(@$email, $pfw2_subject ,$pfw2_message ,$pfw2_header ) ;
 
 
