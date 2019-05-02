@@ -76,6 +76,25 @@ $pfw_message = "\\\\title{" . strtoupper($title_of_the_presentation) . "}\n"
 @mail($pfw_email_to, $pfw_subject ,$pfw_message ,$pfw_header ) ;
 
 
+//Sending Email to vitanov@phys.uni-sofia.bg
+$pfw_header = "From: $sur_name\n"
+  . "Reply-To: $sur_name\n";
+$pfw_subject = "CAMEL registration";
+$pfw_email_to = "vitanov@phys.uni-sofia.bg";
+//
+$pfw_message = "\\\\title{" . strtoupper($title_of_the_presentation) . "}\n"
+. "% $title_of_the_presentation\n\n"
+. "\underline{" . $first_name[0] . ". " . $sur_name . "} \index{" . $sur_name . " " . $first_name[0] . ".} \n"
+. "%" . $first_name . " " . $sur_name . "\n\n"
+. "{\\\\normalsize{\\\\vspace{-4mm}\n"
+. "$address\n\n"
+. "$nationality\n\n"
+. "\email " . "$email" . "}}\n\n"
+. "$abstract\n\n"
+. "\\\\vspace{\baselineskip}";
+@mail($pfw_email_to, $pfw_subject ,$pfw_message ,$pfw_header ) ;
+
+
 //Sending Email to genko.genov@gmail.com
 $pfw_header = "From: $sur_name\n"
   . "Reply-To: $sur_name\n";
