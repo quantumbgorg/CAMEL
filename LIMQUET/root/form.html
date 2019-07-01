@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Control of Quantum Dynamics of Atoms, Molecules and Ensembles by Light workshop 2019</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container" style="width : 60%">
+            <div class="jumbotron">
+            <form method="post" action="http://camel15.quantum-bg.org/reg.php">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <label for="lastName">Title:</label>
+                        <select class="form-control" name="Title" style="width: auto">
+                        <option value="Dr.">Dr.</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Prof.">Prof.</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-1">
+                        <label for="firstName">First name:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="first name" id="firstName" placeholder="First name:">
+                            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <label for="lastName">Last name:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="sur name" id="lastName" placeholder="Last name:">
+                            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="lastName">Email:</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email:">
+                            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 25px">
+                    <div class="col-sm-8">
+                        <label for="Address">Address:</label>
+                        <div class="input-group">
+                            <textarea class="form-control" name="address" rows="5" name="address" id="Address" placeholder="Type your address:"></textarea>
+                            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 25px">
+                    <div class="col-sm-8">
+                        <label for="country">Presentation title:</label>
+                        <input type="text" name="title of the presentation" class="form-control" id="country" placeholder="Type your presentation title:">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="lastName">Presentation type:</label>
+                        <br>
+                        <select class="form-control" name="presentation" style="width:auto">
+                        <option value="">talk</option>
+                        <option value="Mr.">poster</option>
+                        <option value="Ms.">none</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 25px">
+                    <div class="col-sm-8">
+                        <label for="abstract">Abstract (max 1500 characters):</label>
+                        <textarea class="form-control" name="abstract" rows="8" id="Abstract" placeholder="Type your abstract:"></textarea>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 25px">
+                    <div class="col-sm-8">
+                        <label for="comments">Comments (max 1000 characters):</label>
+                        <textarea class="form-control" name="comments" rows="2" id="comments" placeholder="Which dates are possible/impossible/preferred for your talk/poster?"></textarea>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px; margin-left: 10px">
+                    <span style="color:red; text-align: left">Mandatory fields <span class="glyphicon glyphicon-asterisk"></span></span>
+		      <input class="btn btn-success" style="margin-left: 30%" type="submit" name="Submit" value="Submit"> 
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="bootstrap/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
