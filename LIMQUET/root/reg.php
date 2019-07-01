@@ -64,7 +64,7 @@ $pfw_message = "\\\\title{" . strtoupper($title_of_the_presentation) . "}\n"
 $pfw2_header = "From: LIMQUET_School";
 $pfw2_subject = "LIMQUET School registration successful";
 $pfw2_email_to = "$email, genko.genov@gmail.com, vitanov@phys.uni-sofia.bg, limquet@quantum-bg.org";
-$pfw2_message = "Thank you for your abstract submission for LIMQUET school. The following form was sent to us : "
+$pfw2_message = "Thank you for your abstract submission for LIMQUET school. The following form was sent to us: "
 ."
 "
 ."
@@ -83,6 +83,6 @@ $pfw2_message = "Thank you for your abstract submission for LIMQUET school. The 
 @mail(@$email, $pfw2_subject ,$pfw2_message ,$pfw2_header ) ;
 
 
- echo("<p align='center'><font face='Arial' size='3' color='#FF0000'>Your registration form was successfully sent</font></p>");
+ echo("<p align='center'><font face='Arial' size='3' color='#FF0000'>Your registration form was successfully sent. The confirmation message may be in your spam folder.</font></p>");
 ?>
 
