@@ -20,17 +20,11 @@
 		<!-- end #search -->
 	</div>
 	<!-- end #header -->
-	<div id="menu">
-		<ul>
-			<li></li>
-		</ul>
-	</div>
-	<!-- end #menu -->
 <h1 align="left" class="title">&nbsp;</h1>
 <h1 align="left" class="title">Transportation</h1>
 <p align="left" class="meta">&nbsp;</p>
 			  <div class="entry">                
-			    <div align="left">If you need transportation from Sofia  airport to the conference site and back, please submit your travel details (price included in the conference fee).</div>
+			    <div align="left">If you need transportation from Sofia airport to the conference site and back, please submit your travel details (price included in the conference fee):</div>
   </div>
 				<form name="form2" method="post" action="tr.php">
                   
@@ -49,14 +43,14 @@
                     </TABLE>
                     <TABLE width="128%" align=center border=0>
                       <TR>
-                        <TD>Your Name</TD>
-                        <TD><input name="name" type="text" id="name" size="20"></TD>
+                        <TD>Your name</TD>
+                        <TD><input name="name" type="text" id="name" size="20" required></TD>
                         <TD colspan="2">&nbsp;</TD>
                       </TR>
                       <TR>
-                        <TD>Your Email</TD>
+                        <TD>Your email</TD>
                         <TD><font color="#FF0000">
-                          <input name="email" type="text" id="email2" size="20">
+                          <input name="email" type="text" id="email2" size="20" required>
                         </font></TD>
                         <TD colspan="2"><font color="#FF0000">&nbsp; </font></TD>
                       </TR>
@@ -67,7 +61,7 @@
                         <TD colspan="2"><font color="#FF0000">&nbsp;                        </font></TD>
                       </TR>
                       <TR>
-                        <TD colspan="2"><strong>Arrival to Sofia Airport </strong></TD>
+                        <TD colspan="2"><strong>Arrival at Sofia Airport </strong></TD>
                         <TD colspan="2"><strong>Departure from Sofia Airport</strong></TD>
                       </TR>
                       <TR>
@@ -75,7 +69,7 @@
                         <TD colspan="2">&nbsp;</TD>
                       </TR>
                       <TR>
-                        <TD colspan="2">Hotel of accommodations </TD>
+                        <TD colspan="1">Hotel of accommodations </TD>
                         <TD colspan="2"><input name="hotel" type="text" id="hotel" size="20"></TD>
                       </TR>
                       <TBODY>
@@ -84,36 +78,37 @@
                           <TD colspan="2">&nbsp;</TD>
                         </TR>
                         <TR>
-                          <TD width="182">Number of flight                        </TD>
-                          <TD width="230"><input name="flight arrival" type="text" id="flight arrival" size="20">                            </TD>
-                          <TD width="252">Number of flight </TD>
-                          <TD width="534"><input name="flight departure" type="text" id="first name27" size="20">
+                          <TD width="182">Flight number                        </TD>
+                          <TD width="230"><input name="flight arrival" type="text" id="flight arrival" size="20" required></TD>
+                          <TD width="252">Flight number </TD>
+                          <TD width="534"><input name="flight departure" type="text" id="first name27" size="20" required>
                           </TD>
                         </TR>
                         <TR>
                           <TD>Arriving from                          </TD>
-                          <TD><input name="arriving from" type="text" id="arriving from" size="20">
+                          <TD><input name="arriving from" type="text" id="arriving from" size="20" required>
                           </TD>
                           <TD>Departing to </TD>
-                          <TD><input name="departing to " type="text" id="first name26" size="20">
+                          <TD><input name="departing to " type="text" id="first name26" size="20" required>
                           </TD>
                         </TR>
                         <TR>
-                          <TD>Arriving Date</TD>
-                          <TD><input name="arriving date " type="text" id="first name24" size="20">
+                          <TD>Arrival date</TD>
+                          <TD><input name="arriving date " type="date" id="first name24" size="20" required>
                           </TD>
-                          <TD>Departing Date</TD>
-                          <TD><input name="departing date " type="text" id="first name25" size="20">
+                          <TD>Departure date</TD>
+                          <TD><input name="departing date " type="date" id="first name25" size="20" required>
                           </TD>
                         </TR>
                         <TR>
-                          <TD>Arriving  Time                          </TD>
-                          <TD><input name="arriving time " type="text" id="first name24" size="20">
+                          <TD>Arrival time                          </TD>
+                          <TD><input name="arriving time " type="time" id="first name24" size="20" required>
                           </TD>
-                          <TD>Departing  Time</TD>
-                          <TD><input name="departing time " type="text" id="first name25" size="20">
+                          <TD>Departure time</TD>
+                          <TD><input name="departing time " type="time" id="first name25" size="20" required>
                           </TD>
                         </TR>
+						
                         <TR>
                           <TD colspan="2"> <font color="#FF0000">&nbsp; </font>
                               <input type="submit" name="Submit" value="Submit"></TD>
@@ -122,11 +117,14 @@
                           <TD>
                             <div align="left"></div></TD>
                         </TR>
-                        <TR>
-                          <TD colspan="4"><font color="#FF0000">All fields</font> <font color="#FF0000">are mandatory</font></TD>
-                        </TR>
+						
                       </TBODY>
                     </TABLE>
+					<p><font color="#FF0000">
+                    If you arrive at/depart from Sofia airport, please add "Sofia" after your flight number.</font></p>
+					<p></p>
+					<p></p>
+					<p><font color="#FF0000">This form may not work properly on Safari or Internet Explorer 12 and earlier versions.</font></p>
                   </div>
   </form>
 </div>

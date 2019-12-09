@@ -71,11 +71,11 @@ if (strlen($departing_time_) == 0 )
 die("<p align='center'><font face='Arial' size='3' color='#FF0000'>Please enter a valid departing time</font></p>");
 }
 
-//Sending Email to form owner
+//Sending Email to genko.genov@gmail.com, limquet@quantum-bg.org, vitanov@phys.uni-sofia.bg
 $pfw_header = "From: $name\n"
   . "Reply-To: $name\n";
-$pfw_subject = "CAMEL14 transportation form";
-$pfw_email_to = "camel14@quantum-bg.org";
+$pfw_subject = "CAMEL16 transportation form";
+$pfw_email_to = "genko.genov@gmail.com, camel16@quantum-bg.org, vitanov@phys.uni-sofia.bg";
 $pfw_message = "Visitor's IP: $pfw_ip\n"
 ."
 "
@@ -96,14 +96,14 @@ $pfw_message = "Visitor's IP: $pfw_ip\n"
 . "departing_time_: $departing_time_\n"
 ."
 "
-. "If you want to contact us for further information, please write us at the following address camel14@quantum-bg.org ";
+. "If you want to contact us for further information, please write us at the following address camel16@quantum-bg.org ";
 @mail($pfw_email_to, $pfw_subject ,$pfw_message ,$pfw_header ) ;
 
 //Sending auto respond Email to visitor
 
 
-$pfw2_header = "From: CAMEL14";
-$pfw2_subject = "CAMEL14 transportation form sent successful";
+$pfw2_header = "From: CAMEL16";
+$pfw2_subject = "CAMEL16 transportation form sent successful";
 $pfw2_email_to = "$email\n ";
 $pfw2_message = "The following transportation form was sent to us : "
 ."
@@ -128,7 +128,7 @@ $pfw2_message = "The following transportation form was sent to us : "
 ."
 "
 . "Please do not reply to this email, it is automatic response. "
-. "If you want to contact us for further information, please write us at the following address camel14@quantum-bg.org ";
+. "If you want to contact us for further information, please write us at the following address camel16@quantum-bg.org ";
 @mail(@$email, $pfw2_subject ,$pfw2_message ,$pfw2_header ) ;
 
 
