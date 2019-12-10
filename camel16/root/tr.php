@@ -128,7 +128,7 @@ $pfw2_message = "The following transportation form was sent to us: "
 ."
 "
 . "Please do not reply to this email. "
-. "For further information, contact us at camel16@quantum-bg.org ";
+. "For further information, contact us at camel16@quantum-bg.org";
 @mail(@$email, $pfw2_subject ,$pfw2_message ,$pfw2_header ) ;
 
 
