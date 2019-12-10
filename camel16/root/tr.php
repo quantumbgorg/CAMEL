@@ -103,9 +103,9 @@ $pfw_message = "Visitor's IP: $pfw_ip\n"
 
 
 $pfw2_header = "From: CAMEL16";
-$pfw2_subject = "CAMEL16 transportation form sent successful";
+$pfw2_subject = "CAMEL16 transportation form successfully sent";
 $pfw2_email_to = "$email\n ";
-$pfw2_message = "The following transportation form was sent to us : "
+$pfw2_message = "The following transportation form was sent to us: "
 ."
 "
 ."
@@ -127,8 +127,8 @@ $pfw2_message = "The following transportation form was sent to us : "
 . "departing_time_: $departing_time_\n"
 ."
 "
-. "Please do not reply to this email, it is automatic response. "
-. "If you want to contact us for further information, please write us at the following address camel16@quantum-bg.org ";
+. "Please do not reply to this email. "
+. "For further information, contact us at camel16@quantum-bg.org ";
 @mail(@$email, $pfw2_subject ,$pfw2_message ,$pfw2_header ) ;
 
 
