@@ -59,11 +59,11 @@ $message = "\\\\title{" . strtoupper($title_of_the_presentation) . "}\n"
 @mail($to, $subject, $message, $header);
 
 
-//Sending auto respond Email to visitor and genko.genov@gmail.com, vitanov@phys.uni-sofia.bg, camel16@quantum-bg.org
+//Sending auto respond Email to visitor and genko.genov@gmail.com, vitanov@phys.uni-sofia.bg, camel@quantum-bg.org
 
 $header = "From: CAMEL";
 $subject = "CAMEL registration successful";
-$to = "$email, genko.genov@gmail.com, vitanov@phys.uni-sofia.bg, camel16@quantum-bg.org";
+$to = "$email, genko.genov@gmail.com, vitanov@phys.uni-sofia.bg, camel@quantum-bg.org";
 $message = "Thank you for your abstract submission for the CAMEL workshop. The following form was sent to us: "
 ."
 "
@@ -79,7 +79,7 @@ $message = "Thank you for your abstract submission for the CAMEL workshop. The f
 . "abstract: $abstract\n"
 . "comments: $comments\n"
 . "Please do not reply to this email, it is automatic respond. "
-. "For further information, you can contact us at camel16@quantum-bg.org ";
+. "For further information, you can contact us at camel@quantum-bg.org ";
 @mail($to, $subject, $message, $header);
 
 
